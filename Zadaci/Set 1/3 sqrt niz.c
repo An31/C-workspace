@@ -26,3 +26,9 @@ int main()
 }
 // kompajliranje sa gcc-om potreban linker za biblioteku math.h:
 // gcc "3 sqrt niz.c" -lm 
+// -l podrazumjeva lib prefix i .so ili .a(archive, staticna biblioteka - compile time i shared object dinamcka biblioteka) prefix (Linux,Windows)
+// Linker -lm je linker za math biblioteku koja se zove libm.so(shared object, dinamicka biblioteka).
+// Vise o bibliotekama http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
+// Vise o bibliotekama http://www.tldp.org/HOWTO/Program-Library-HOWTO/static-libraries.html
+// Vise o linker: https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html
+
